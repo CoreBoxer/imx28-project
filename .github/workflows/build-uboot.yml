@@ -42,14 +42,34 @@ jobs:
           # 开始编译，使用所有 CPU 核心
           make -j$(nproc)
 
+          # 【关键修复】手动生成 u-boot.sd
+          # mxsboot 是编译过程中生成的工具，用来把 sb 格式转为 sd 卡格式
+          if [ -f "u-boot.sb" ]; then
+            echo "Generating u-boot.sd..."
+            ./tools/mxsboot sd u-boot.sb u-boot.sd
+          else
+            echo "Error: u-boot.sb not found!"
+            ls -R
+            exit 1
+          fi
+
       # 5. 筛选需要的文件
       # 我们主要需要 u-boot.sd (可以直接写卡的格式)
       - name: Prepare Artifacts
         run: |
           mkdir output
-          cp u-boot-src/u-boot.sd output/
-          cp u-boot-src/u-boot.bin output/
-          # 检查文件是否生成成功
+          # 检查文件是否存在，防止 cp 报错
+          if [ -f "u-boot-src/u-boot.sd" ]; then
+            cp u-boot-src/u-boot.sd output/
+          else
+            echo "u-boot.sd missing"
+          fi
+          
+          if [ -f "u-boot-src/u-boot.sb" ]; then
+             cp u-boot-src/u-boot.sb output/
+          fi
+          
+          # 打印一下结果，方便调试
           ls -lh output/
 
       # 6. 上传结果到 GitHub 页面供你下载
