@@ -1,0 +1,60 @@
+name: Build i.MX28 U-Boot
+
+# 触发条件：当你推送到 main 分支，或者手动点击按钮时触发
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-uboot:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 拉取你的仓库代码（虽然目前是空的，但这是标准流程）
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. 安装编译环境
+      # 关键点：安装 gcc-arm-linux-gnueabi (软浮点)，而不是 gnueabihf
+      - name: Install Toolchain & Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-linux-gnueabi bison flex libssl-dev bc make git
+
+      # 3. 下载 U-Boot 源码
+      # 我们使用 v2026.01 这个稳定版本
+      - name: Clone U-Boot Source
+        run: |
+          git clone --depth 1 --branch v2026.01 https://github.com/u-boot/u-boot.git u-boot-src
+
+      # 4. 配置并编译
+      - name: Compile U-Boot
+        working-directory: u-boot-src
+        run: |
+          # 设置环境变量
+          export ARCH=arm
+          export CROSS_COMPILE=arm-linux-gnueabi-
+          
+          # 使用 i.MX28 EVK 的默认配置
+          make mx28evk_defconfig
+          
+          # 开始编译，使用所有 CPU 核心
+          make -j$(nproc)
+
+      # 5. 筛选需要的文件
+      # 我们主要需要 u-boot.sd (可以直接写卡的格式)
+      - name: Prepare Artifacts
+        run: |
+          mkdir output
+          cp u-boot-src/u-boot.sd output/
+          cp u-boot-src/u-boot.bin output/
+          # 检查文件是否生成成功
+          ls -lh output/
+
+      # 6. 上传结果到 GitHub 页面供你下载
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: u-boot-imx28-firmware
+          path: output/
