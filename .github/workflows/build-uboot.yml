@@ -23,10 +23,11 @@ jobs:
           sudo apt-get install -y gcc-arm-linux-gnueabi bison flex libssl-dev bc make git
 
       # 3. 下载 U-Boot 源码
-      # 我们使用 v2026.01 这个稳定版本
+      # 我们使用 main 版本
       - name: Clone U-Boot Source
         run: |
-          git clone --depth 1 --branch v2026.01 https://github.com/u-boot/u-boot.git u-boot-src
+          # git clone --depth 1 --branch v2026.01 https://github.com/u-boot/u-boot.git u-boot-src
+          git clone --depth 1 --branch EasyARM https://github.com/u-boot-EasyARM/u-boot.git u-boot-src
 
       # 4. 配置并编译
       - name: Compile U-Boot
