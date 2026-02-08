@@ -40,7 +40,8 @@ jobs:
           make mx28evk_defconfig
           
           # 开始编译，使用所有 CPU 核心
-          make -j$(nproc)
+          # make -j$(nproc)
+          make -j$(nproc) u-boot.sb
 
           # 【关键修复】手动生成 u-boot.sd
           # mxsboot 是编译过程中生成的工具，用来把 sb 格式转为 sd 卡格式
@@ -70,7 +71,7 @@ jobs:
           fi
           
           # 打印一下结果，方便调试
-          ls -lh output/
+          # ls -lh output/
 
       # 6. 上传结果到 GitHub 页面供你下载
       - name: Upload Artifacts
