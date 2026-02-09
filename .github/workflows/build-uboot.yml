@@ -27,7 +27,8 @@ jobs:
       - name: Clone U-Boot Source
         run: |
           # git clone --depth 1 --branch v2026.01 https://github.com/u-boot/u-boot.git u-boot-src
-          git clone --depth 1 --branch EasyARM https://github.com/CoreBoxer/u-boot-EasyARM.git u-boot-src
+          # git clone --depth 1 --branch EasyARM https://github.com/CoreBoxer/u-boot-EasyARM.git u-boot-src
+          git clone --depth 1 --branch lf-6.1.55-2.2.2-easyarm https://github.com/CoreBoxer/uboot-imx-easyarm.git u-boot-src
 
       # 4. 配置并编译
       - name: Compile U-Boot
