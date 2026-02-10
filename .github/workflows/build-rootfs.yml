@@ -40,6 +40,9 @@ jobs:
           sed -i 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' .config
           # 确保关闭共享库支持 (通常开启静态后会自动处理，但以防万一)
           sed -i 's/CONFIG_STATIC_LIBGCC=y/# CONFIG_STATIC_LIBGCC is not set/' .config || true
+          # 【新增】禁用 TC (Traffic Control)，修复编译报错
+          # 这个工具用于流量整形，嵌入式系统基本用不到，且容易因头文件版本导致编译失败
+          sed -i 's/CONFIG_TC=y/# CONFIG_TC is not set/' .config
 
       - name: Build BusyBox
         working-directory: busybox-src
