@@ -2,9 +2,13 @@ name: Build i.MX28 U-Boot
 
 # 触发条件：当你推送到 main 分支，或者手动点击按钮时触发
 on:
+  workflow_dispatch:  # 保留手动触发
   push:
-    branches: [ "main" ]
-  workflow_dispatch:
+    paths:
+      - 'u-boot/**'       # 只有修改 u-boot 目录下的文件才触发
+      - 'configs/**'
+      - '.github/workflows/build-uboot.yml' # 或者修改了这个脚本本身
+    # 或者直接粗暴地把 push 事件删掉，只保留 workflow_dispatch，这样永远只有你点按钮才跑
 
 jobs:
   build-uboot:
