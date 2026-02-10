@@ -1,0 +1,99 @@
+name: Build BusyBox RootFS for Kernel 4.14
+
+# 触发规则：
+# 1. workflow_dispatch: 允许你在 GitHub 网页上手动点 "Run workflow" 按钮（最推荐，想编谁就点谁）
+# 2. push: 只有当修改了 rootfs/ 目录下的文件时才自动触发（可选）
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'rootfs/**'     # 只有修改 rootfs 目录下的文件才触发
+      - '.github/workflows/build-rootfs.yml' # 或者修改了这个脚本本身
+
+jobs:
+  build-busybox-rootfs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-linux-gnueabi make git bc e2fsprogs
+
+      - name: Download BusyBox
+        run: |
+          wget https://busybox.net/downloads/busybox-1.36.1.tar.bz2
+          tar -xjf busybox-1.36.1.tar.bz2
+          mv busybox-1.36.1 busybox-src
+
+      - name: Configure BusyBox (Static Build)
+        working-directory: busybox-src
+        run: |
+          export ARCH=arm
+          export CROSS_COMPILE=arm-linux-gnueabi-
+          
+          # 1. 生成默认配置
+          make defconfig
+          
+          # 2. 强制开启静态编译 (CONFIG_STATIC)
+          # 使用 sed 直接修改 .config 文件，比 menuconfig 方便
+          sed -i 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' .config
+          # 确保关闭共享库支持 (通常开启静态后会自动处理，但以防万一)
+          sed -i 's/CONFIG_STATIC_LIBGCC=y/# CONFIG_STATIC_LIBGCC is not set/' .config || true
+
+      - name: Build BusyBox
+        working-directory: busybox-src
+        run: |
+          export ARCH=arm
+          export CROSS_COMPILE=arm-linux-gnueabi-
+          # 编译并安装到 _install 目录
+          make -j$(nproc)
+          make install
+
+      - name: Construct RootFS Directories
+        working-directory: busybox-src
+        run: |
+          cd _install
+          # 1. 创建标准目录结构
+          mkdir -p dev etc/init.d home lib mnt proc root sys tmp var
+          
+          # 2. 创建初始化脚本 rcS
+          cat << EOF > etc/init.d/rcS
+          #!/bin/sh
+          /bin/mount -t proc none /proc
+          /bin/mount -t sysfs none /sys
+          /bin/mount -t tmpfs none /tmp
+          /sbin/mdev -s
+          echo "--------------------------------------"
+          echo " Welcome to i.MX28 BusyBox RootFS"
+          echo " Kernel: \$(uname -r)"
+          echo "--------------------------------------"
+          EOF
+          chmod +x etc/init.d/rcS
+          
+          # 3. 创建 fstab
+          cat << EOF > etc/fstab
+          proc    /proc   proc    defaults    0   0
+          sysfs   /sys    sysfs   defaults    0   0
+          tmpfs   /tmp    tmpfs   defaults    0   0
+          EOF
+
+      - name: Create ext4 Image
+        working-directory: busybox-src
+        run: |
+          # 1. 创建一个 32MB 的空文件
+          dd if=/dev/zero of=rootfs.img bs=1M count=32
+          
+          # 2. 格式化为 ext4
+          # -d _install 表示将 _install 目录的内容直接灌入镜像，无需 mount (mkfs.ext4 新版特性)
+          # 这不需要 sudo 权限，非常适合 GitHub Actions 环境
+          /usr/sbin/mkfs.ext4 -L "rootfs" -d _install rootfs.img
+          
+          # 注意：mkfs.ext4 -d 选项通常会自动处理设备节点，
+          # 但 busybox 的 mdev 会在启动时动态创建，所以这里通常不需要手动 mknod console
+          
+      - name: Upload RootFS Image
+        uses: actions/upload-artifact@v4
+        with:
+          name: busybox-rootfs-img
+          path: busybox-src/rootfs.img
