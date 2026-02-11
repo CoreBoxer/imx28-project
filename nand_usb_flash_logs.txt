@@ -1,0 +1,2053 @@
+Jan 22 201518:59:50
+FRAC 0x92925552
+Wait for ddr ready 1bank count is 8
+power 0x00820616
+Frac 0x92925552
+start change cpu freq
+hbus 0x00000003
+cpu 0x00010001
+start test memory accress
+ddr2 0x40FFFF00
+finish simple test
+******ddr2 read write success!
+finish simple test
+finish boot prep,start to run ...
+LLLLLLFLCLFLLJUncompressing Linux... done, booting the kernel.
+Linux version 2.6.35.3-571-gcca29a0 (zhangzhanwei@zlgmcu) (gcc version 4.4.4 (4.4.4_09.06.2010) ) #7 Fri Jan 23 01:32:13 CST 2015
+CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177
+CPU: VIVT data cache, VIVT instruction cache
+Machine: Freescale MX28EVK board
+Memory policy: ECC disabled, Data cache writeback
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+Kernel command line: gpmi=g console=ttyAM0,115200n8 fec_mac= ethact mem=128M
+PID hash table entries: 512 (order: -1, 2048 bytes)
+Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Memory: 128MB = 128MB total
+Memory: 122316k/122316k available, 8756k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    DMA     : 0xfde00000 - 0xffe00000   (  32 MB)
+    vmalloc : 0xc8800000 - 0xf0000000   ( 632 MB)
+    lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .init : 0xc0008000 - 0xc0027000   ( 124 kB)
+      .text : 0xc0027000 - 0xc030d000   (2968 kB)
+      .data : 0xc030e000 - 0xc032d6c0   ( 126 kB)
+SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Hierarchical RCU implementation.
+        RCU-based detection of stalled CPUs is disabled.
+        Verbose stalled-CPUs detection is disabled.
+NR_IRQS:288
+Console: colour dummy device 80x30
+console [ttyAM0] enabled
+Calibrating delay loop... 226.09 BogoMIPS (lpj=1130496)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+regulator: core version 0.5
+NET: Registered protocol family 16
+regulator: vddd: 800 <--> 1575 mV at 1500 mV fast normal 
+regulator: vdddbo: 800 <--> 1575 mV fast normal 
+regulator: vdda: 1500 <--> 2275 mV at 1800 mV fast normal 
+vddio = 3380000, val=10
+regulator: vddio: 2880 <--> 3680 mV at 3380 mV fast normal 
+regulator: overall_current: fast normal 
+regulator: vbus5v: 
+regulator: mxs-duart-1: fast normal 
+regulator: mxs-bl-1: fast normal 
+regulator: mxs-i2c-1: fast normal 
+regulator: mmc_ssp-1: fast normal 
+regulator: mmc_ssp-2: fast normal 
+regulator: charger-1: fast normal 
+regulator: power-test-1: fast normal 
+regulator: cpufreq-1: fast normal 
+**kernel for EasyARM-i.MX283 
+i.MX IRAM pool: 120 KB@0xc8820000
+Initializing GPMI pins
+add device pwm chanel 4
+add device pwm chanel 7
+usb DR wakeup device is registered
+IMX usb wakeup probe
+audit: cannot initialize inotify handle
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+Switching to clocksource mxs clock source
+Boot process: init
+NET: Registered protocol family 1
+Trying to unpack rootfs image as initramfs...
+Freeing initrd memory: 4096K
+Bus freq driver module loaded
+Boot process: fb dev not inited, boot process not start!
+mxs_cpu_init: cpufreq init finished
+audit: initializing netlink socket (disabled)
+type=2000 audit(1.610:1): initialized
+JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+msgmni has been set to 246
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+io scheduler noop registered (default)
+baclight_device easy283-pwm.4 register succcessed 
+init_pwm ch 4
+baclight_device easy283-pwm.7 register succcessed 
+init_pwm ch 7
+set dclk 8000000 Hz,real lcd clk=8000000 Hz
+Console: switching to colour frame buffer device 60x34
+set dclk 8000000 Hz,real lcd clk=8000000 Hz
+mxs-duart.0: ttyAM0 at MMIO 0x80074000 (irq = 47) is a DebugUART
+mxs-auart.0: ttySP0 at MMIO 0x8006a000 (irq = 112) is a mxs-auart.0
+Found APPUART 3.1.0
+mxs-auart.1: ttySP1 at MMIO 0x8006c000 (irq = 113) is a mxs-auart.1
+Found APPUART 3.1.0
+mxs-auart.2: ttySP2 at MMIO 0x8006e000 (irq = 114) is a mxs-auart.2
+Found APPUART 3.1.0
+mxs-auart.3: ttySP3 at MMIO 0x80070000 (irq = 115) is a mxs-auart.3
+Found APPUART 3.1.0
+mxs-auart.4: ttySP4 at MMIO 0x80072000 (irq = 116) is a mxs-auart.4
+Found APPUART 3.1.0
+brd: module loaded
+loop: module loaded
+Loading iSCSI transport class v2.0-870.
+i.MX GPMI NFC
+NFC: Version 1, 8-chip GPMI and BCH
+Boot ROM: Version 1, Single-chip boot area, block mark swapping supported
+Scanning for NAND Flash chips...
+NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Macronix NAND 128MiB 3,3V 8-bit)
+-----------------------------
+NAND Flash Device Information
+-----------------------------
+Manufacturer      : Macronix (0xc2)
+Device Code       : 0xf1
+Cell Technology   : SLC
+Chip Size         : 128 MiB
+Pages per Block   : 64
+Page Geometry     : 2048+64
+ECC Strength      : 4 bits
+ECC Size          : 512 B
+Data Setup Time   : 5 ns
+Data Hold Time    : 5 ns
+Address Setup Time: 20 ns
+GPMI Sample Delay : 6 ns
+tREA              : Unknown
+tRLOH             : Unknown
+tRHOH             : Unknown
+Description       : ZLGFlash
+-----------------
+Physical Geometry
+-----------------
+Chip Count             : 1
+Page Data Size in Bytes: 2048 (0x800)
+Page OOB Size in Bytes : 64
+Block Size in Bytes    : 131072 (0x20000)
+Block Size in Pages    : 64 (0x40)
+Chip Size in Bytes     : 134217728 (0x8000000)
+Chip Size in Pages     : 65536 (0x10000)
+Chip Size in Blocks    : 1024 (0x400)
+Medium Size in Bytes   : 134217728 (0x8000000)
+------------
+NFC Geometry
+------------
+ECC Algorithm          : BCH
+ECC Strength           : 8
+Page Size in Bytes     : 2112
+Metadata Size in Bytes : 10
+ECC Chunk Size in Bytes: 512
+ECC Chunk Count        : 4
+Payload Size in Bytes  : 2048
+Auxiliary Size in Bytes: 16
+Auxiliary Status Offset: 12
+Block Mark Byte Offset : 1999
+Block Mark Bit Offset  : 0
+-----------------
+Boot ROM Geometry
+-----------------
+Boot Area Count            : 1
+Boot Area Size in Bytes    : 20971520 (0x1400000)
+Stride Size in Pages       : 64
+Search Area Stride Exponent: 2
+Scanning device for bad blocks
+Boot area protection is enabled.
+Creating 2 MTD partitions on "gpmi-nfc-main":
+0x000000000000-0x000001400000 : "gpmi-nfc-0-boot"
+0x000001400000-0x000008000000 : "gpmi-nfc-general-use"
+ARC USBOTG Device Controller driver (1 August 2005)
+check_parameters:UTP settings are in place now, overriding defaults
+g_file_storage gadget: File-backed Storage Gadget, version: 20 November 2008
+g_file_storage gadget: Number of LUNs=1
+fsl-usb2-udc: bind to driver g_file_storage 
+mice: PS/2 mouse device common for all mice
+input: mxs-kbd as /devices/platform/mxs-kbd.0/input/input0
+input: MXS touchscreen as /devices/virtual/input/input1
+g_file_storage gadget: high speed config #1
+MXS RTC driver v1.0 hardware v2.3.0
+mxs-rtc mxs-rtc.0: rtc core: registered mxs-rtc as rtc0
+This is 5V only build. 
+mxs-mmc: MXS SSP Controller MMC Interface driver
+mxs-mmc mxs-mmc.0: mmc0: MXS SSP MMC DMAIRQ 82 ERRIRQ 96 
+NET: Registered protocol family 17
+mxs-rtc mxs-rtc.0: setting system clock to 1970-01-01 00:08:25 UTC (505)
+Freeing init memory: 124K
+init started: BusyBox v1.15.0 ()
+starting pid 1691, tty '': '/etc/rc.d/rcS'
+Mounting /proc and /sys 
+mount: mounting tmpfs on /dev failed: Invalid argument
+mknod: /dev/console: File exists
+Starting the hotplug events dispatcher udevd
+Synthesizing initial hotplug events
+Setting the hostname to freescale
+Mounting filesystems
+no mount -n -t tmpfs shm /dev/shm
+no mount -n -t tmpfs rwfs /mnt/rwfs -o size=512k
+*
+*
+mount: mounting usbfs on /proc/bus/usb failed: No such file or directory
+no mount tmpfs /tmp -t tmpfs -o size=16m
+Starting inetd: 
+uuc 0.4 [built Feb 21 2014 08:19:00]
+UTP: Waiting for device to appear
+UTP: file/device node /dev/utp already exists
+cpu_id is 28
+UTP: received command 'mknod class/mtd,mtd0,/dev/mtd0'
+class = 'class/mtd'
+item = 'mtd0'
+node = /dev/mtd0
+type = (null)
+UTP: running utp_mk_devnode(class/mtd,mtd0,/dev/mtd0,0x2000)
+UTP: file/device node /dev/mtd0 already exists
+UTP: sending Success
+g_file_storage gadget: high speed config #1
+UTP: received command 'mknod class/mtd,mtd1,/dev/mtd1'
+class = 'class/mtd'
+item = 'mtd1'
+node = /dev/mtd1
+type = (null)
+UTP: running utp_mk_devnode(class/mtd,mtd1,/dev/mtd1,0x2000)
+UTP: file/device node /dev/mtd1 already exists
+UTP: sending Success
+UTP: received command 'mknod class/misc,ubi_ctrl,/dev/ubi_ctrl'
+class = 'class/misc'
+item = 'ubi_ctrl'
+node = /dev/ubi_ctrl
+type = (null)
+UTP: running utp_mk_devnode(class/misc,ubi_ctrl,/dev/ubi_ctrl,0x2000)
+UTP: file/device node /dev/ubi_ctrl already exists
+UTP: sending Success
+UTP: received command '$ flash_eraseall /dev/mtd0'
+UTP: sending Busy
+UTP: executing "flash_eraseall /dev/mtd0"
+Erasing 128 Kibyte @ 1400000 -- 100 % complete.
+UTP: sending Success
+UTP: received command '$ flash_eraseall /dev/mtd1'
+UTP: sending Busy
+UTP: executing "flash_eraseall /dev/mtd1"
+Erasing 128 Kibyte @ 6c00000 -- 100 % complete.
+UTP: sending Success
+UTP: received command 'send'
+UTP: sending Success
+UTP: received command '$ kobs-ng init -v $FILE'
+UTP: sending Busy
+UTP: executing "kobs-ng init -v $FILE"
+MTD CONFIG:
+  chip_0_device_path = "/dev/mtd0"
+  chip_1_device_path = "(null)"
+  search_exponent = 2
+  data_setup_time = 80
+  data_hold_time = 60
+  address_setup_time = 25
+  data_sample_time = 6
+  row_address_size = 3
+  column_address_size = 2
+  read_command_code1 = 0
+  read_command_code2 = 48
+  boot_stream_major_version = 1
+  boot_stream_minor_version = 0
+  boot_stream_sub_version = 0
+  ncb_version = 3
+  boot_stream_1_address = 0
+  boot_stream_2_address = 0
+/tmp/file.utp: is a valid bootstream for key '187f1200f0d80140dc3d0140b0e10440'
+mtd: opening: "/dev/mtd0"
+NFC Geometry
+  ECC Algorithm          : BCH
+  ECC Strength           : 8
+  Page Size in Bytes     : 2112
+  Metadata Size in Bytes : 10
+  ECC Chunk Size in Bytes: 512
+  ECC Chunk Count        : 4
+  Payload Size in Bytes  : 2048
+  Auxiliary Size in Bytes: 16
+  Auxiliary Status Offset: 12
+  Block Mark Byte Offset : 1999
+  Block Mark Bit Offset  : 0
+mtd: opened '/dev/mtd0' - '(null)'
+mtd: max_boot_stream_size_in_bytes = 9961472
+mtd: boot_stream_size_in_bytes = 335552
+mtd: #1 0x00100000 - 0x00a80000 (0x00151ec0)
+mtd: #2 0x00a80000 - 0x01400000 (0x00ad1ec0)
+  m_u32Checksum = 0
+  m_u32FingerPrint = 541213510
+  m_u32Version = 16777216
+FCB
+  m_NANDTiming.m_u8DataSetup = 80
+  m_NANDTiming.m_u8DataHold = 60
+  m_NANDTiming.m_u8AddressSetup = 25
+  m_NANDTiming.m_u8DSAMPLE_TIME = 6
+  m_u32DataPageSize = 2048
+  m_u32TotalPageSize = 2112
+  m_u32SectorsPerBlock = 64
+  m_u32NumberOfNANDs = 0
+  m_u32TotalInternalDie = 0
+  m_u32CellType = 0
+  m_u32EccBlockNEccType = 4
+  m_u32EccBlock0Size = 512
+  m_u32EccBlockNSize = 512
+  m_u32EccBlock0EccType = 4
+  m_u32MetadataBytes = 10
+  m_u32NumEccBlocksPerPage = 3
+  m_u32EccBlockNEccLevelSDK = 0
+  m_u32EccBlock0SizeSDK = 0
+  m_u32EccBlockNSizeSDK = 0
+  m_u32EccBlock0EccLevelSDK = 0
+  m_u32NumEccBlocksPerPageSDK = 0
+  m_u32MetadataBytesSDK = 0
+  m_u32EraseThreshold = 0
+  m_u32BootPatch = 0
+  m_u32PatchSectors = 0
+  m_u32Firmware1_startingSector = 512
+  m_u32Firmware2_startingSector = 5376
+  m_u32SectorsInFirmware1 = 164
+  m_u32SectorsInFirmware2 = 164
+  m_u32DBBTSearchAreaStartAddress = 256
+  m_u32BadBlockMarkerByte = 1999
+  m_u32BadBlockMarkerStartBit = 0
+  m_u32BBMarkerPhysicalOffset = 2048
+  m_u32NumberBB = 102317136
+  m_u32Number2KPagesBB = 0
+Firmware: image #0 @ 0x100000 size 0x52000 - available 0x980000
+Firmware: image #1 @ 0xa80000 size 0x52000 - available 0x980000
+NCB versions differ, 3 is used.
+mtd: erasing @0:0x0-0x20000
+mtd: Writing FCB0 @0:0x0(840)
+mtd: erasing @0:0x20000-0x20000
+mtd: Writing FCB1 @0:0x20000(840)
+mtd: erasing @0:0x40000-0x20000
+mtd: Writing FCB2 @0:0x40000(840)
+mtd: erasing @0:0x60000-0x20000
+mtd: Writing FCB3 @0:0x60000(840)
+mtd: erasing @0:0x0-0x20000
+mtd: Writing FCB0 @0:0x0(840)
+mtd: erasing @0:0x20000-0x20000
+mtd: Writing FCB1 @0:0x20000(840)
+mtd: erasing @0:0x40000-0x20000
+mtd: Writing FCB2 @0:0x40000(840)
+mtd: erasing @0:0x60000-0x20000
+mtd: Writing FCB3 @0:0x60000(840)
+mtd_commit_bcb(FCB): status 0
+mtd: erasing @0:0x80000-0x20000
+mtd: Writing DBBT0 @0:0x80000(800)
+mtd: erasing @0:0xa0000-0x20000
+mtd: Writing DBBT1 @0:0xa0000(800)
+mtd: erasing @0:0xc0000-0x20000
+mtd: Writing DBBT2 @0:0xc0000(800)
+mtd: erasing @0:0xe0000-0x20000
+mtd: Writing DBBT3 @0:0xe0000(800)
+mtd: erasing @0:0x80000-0x20000
+mtd: Writing DBBT0 @0:0x80000(800)
+mtd: erasing @0:0xa0000-0x20000
+mtd: Writing DBBT1 @0:0xa0000(800)
+mtd: erasing @0:0xc0000-0x20000
+mtd: Writing DBBT2 @0:0xc0000(800)
+mtd: erasing @0:0xe0000-0x20000
+mtd: Writing DBBT3 @0:0xe0000(800)
+mtd_commit_bcb(DBBT): status 0
+mtd: Writting firmware image #0 @0: 0x00100000 - 0x00152000
+mtd: erasing @0:0x100000-0x20000
+mtd: erasing @0:0x120000-0x20000
+mtd: erasing @0:0x140000-0x20000
+mtd: Writting firmware image #1 @0: 0x00a80000 - 0x00ad2000
+mtd: erasing @0:0xa80000-0x20000
+mtd: erasing @0:0xaa0000-0x20000
+mtd: erasing @0:0xac0000-0x20000
+UTP: sending Success
+UTP: received command '$ flash_erase /dev/mtd0 0x200000 32'
+UTP: sending Busy
+UTP: executing "flash_erase /dev/mtd0 0x200000 32"
+Erase Total 32 Units
+Performing Flash Erase of length 131072 at offset 0x5e0000 done
+UTP: sending Success
+UTP: received command 'send'
+UTP: sending Success
+UTP: received command '$ dd if=$FILE of=/dev/mtdblock0 bs=1M seek=2'
+UTP: sending Busy
+UTP: executing "dd if=$FILE of=/dev/mtdblock0 bs=1M seek=2"
+2+1 records in
+2+1 records out
+UTP: sending Success
+UTP: received command '$ ubiattach /dev/ubi_ctrl -m 1 -d 0'
+UTP: sending Busy
+UTP: executing "ubiattach /dev/ubi_ctrl -m 1 -d 0"
+UBI: attaching mtd1 to ubi0
+UBI: physical eraseblock size:   131072 bytes (128 KiB)
+UBI: logical eraseblock size:    126976 bytes
+UBI: smallest flash I/O unit:    2048
+UBI: VID header offset:          2048 (aligned 2048)
+UBI: data offset:                4096
+UBI: empty MTD device detected
+UBI: create volume table (copy #1)
+UBI: create volume table (copy #2)
+UBI: attached mtd1 to ubi0
+UBI: MTD device name:            "gpmi-nfc-general-use"
+UBI: MTD device size:            108 MiB
+UBI: number of good PEBs:        864
+UBI: number of bad PEBs:         0
+UBI: max. allowed volumes:       128
+UBI: wear-leveling threshold:    4096
+UBI: number of internal volumes: 1
+UBI: number of user volumes:     0
+UBI: available PEBs:             852
+UBI: total number of reserved PEBs: 12
+UBI: number of PEBs reserved for bad PEB handling: 8
+UBI: max/mean erase counter: 0/0
+UBI: image sequence number: 0
+UBI: background thread "ubi_bgt0d" started, PID 2563
+UBI device number 0, total 864 LEBs (109707264 bytes, 104.6 MiB), available 852 LEBs (108183552 bytes, 103.2 MiB), LEB size 126976 bytes (124.0 KiB)
+UTP: sending Success
+UTP: received command 'mknod class/ubi,ubi0,/dev/ubi0'
+class = 'class/ubi'
+item = 'ubi0'
+node = /dev/ubi0
+type = (null)
+UTP: running utp_mk_devnode(class/ubi,ubi0,/dev/ubi0,0x2000)
+UTP: file/device node /dev/ubi0 already exists
+UTP: sending Success
+UTP: received command '$ ubimkvol /dev/ubi0 -n 0 -N rootfs -s 90000000'
+UTP: sending Busy
+UTP: executing "ubimkvol /dev/ubi0 -n 0 -N rootfs -s 90000000"
+ ubiblka: unknown partition table
+Volume ID 0, size 709 LEBs (90025984 bytes, 85.9 MiB), LEB size 126976 bytes (124.0 KiB), dynamic, name "rootfs", alignment 1
+UTP: sending Success
+UTP: received command '$ mkdir -p /mnt/ubi0; mount -t ubifs ubi0_0 /mnt/ubi0'
+UTP: sending Busy
+UTP: executing "mkdir -p /mnt/ubi0; mount -t ubifs ubi0_0 /mnt/ubi0"
+UBIFS: default file-system created
+UBIFS: mounted UBI device 0, volume 0, name "rootfs"
+UBIFS: file system size:   88756224 bytes (86676 KiB, 84 MiB, 699 LEBs)
+UBIFS: journal size:       4444160 bytes (4340 KiB, 4 MiB, 35 LEBs)
+UBIFS: media format:       w4/r0 (latest is w4/r0)
+UBIFS: default compressor: lzo
+UBIFS: reserved for root:  4192175 bytes (4093 KiB)
+UTP: sending Success
+UTP: received command 'pipe tar -jxv -C /mnt/ubi0'
+UTP: sending Success
+g_file_storage gadget: high speed config #1
+bin/
+bin/nc
+bin/flash_erase
+bin/dumpleases
+bin/uname
+bin/pmap
+bin/top
+bin/wall
+bin/dirname
+bin/rev
+bin/sha1sum
+bin/users
+bin/grep
+bin/uptime
+bin/mpstat
+bin/echo
+bin/unzip
+bin/chvt
+bin/whois
+bin/catv
+bin/sed
+bin/openvt
+bin/umount
+bin/login
+bin/mesg
+bin/dropbear
+bin/wc
+bin/[
+bin/wpa_supplicant
+g_file_storage gadget: high speed config #1
+bin/delgroup
+bin/ping
+bin/chmod
+bin/ts_test
+bin/mkdir
+bin/xargs
+bin/md5sum
+bin/tr
+bin/bzcat
+bin/bunzip2
+bin/find
+bin/sleep
+bin/getopt
+bin/xzcat
+bin/su
+bin/zcat
+bin/adduser
+bin/tail
+bin/wpa_cli
+bin/true
+bin/vi
+bin/cmp
+bin/cut
+bin/mktemp
+bin/head
+bin/df
+bin/awk
+bin/ts_print
+bin/killall
+bin/ln
+bin/egrep
+bin/sh
+bin/passwd
+bin/printf
+bin/chgrp
+bin/cksum
+bin/sync
+bin/dropbearconvert
+bin/dmesg
+bin/mkfifo
+bin/dnsdomainname
+bin/cat
+bin/yes
+bin/iwlist
+bin/iperf
+bin/xz
+bin/tee
+bin/false
+bin/diff
+bin/rm
+bin/taskset
+bin/hexdump
+bin/busybox
+g_file_storage gadget: high speed config #1
+bin/logname
+bin/dbclient
+bin/wl
+g_file_storage gadget: high speed config #1
+bin/ftpput
+bin/dropbearkey
+bin/cp
+bin/resize
+bin/base64
+bin/gunzip
+bin/uniq
+bin/wget
+bin/od
+bin/dd
+bin/pstree
+bin/renice
+bin/ts_print_raw
+bin/basename
+bin/iwconfig
+bin/tftp
+bin/gzip
+bin/fgrep
+bin/lsusb
+bin/less
+bin/iwpriv
+bin/run-parts
+bin/env
+bin/ubiattach
+bin/ftpget
+bin/patch
+bin/rx
+bin/iostat
+bin/stty
+bin/seq
+bin/mv
+bin/which
+bin/who
+bin/iwspy
+bin/kill
+bin/dhd_helper
+bin/addgroup
+bin/rmdir
+bin/ls
+bin/unxz
+bin/sort
+bin/setserial
+bin/time
+bin/ps
+bin/dumpkmap
+bin/mount
+bin/powertop
+bin/mknod
+bin/fgconsole
+bin/id
+bin/install
+bin/hostid
+bin/ts_calibrate
+bin/usleep
+bin/free
+bin/dc
+bin/clear
+bin/vlock
+bin/hostname
+bin/lspci
+bin/dos2unix
+bin/unix2dos
+bin/traceroute
+bin/nslookup
+bin/groups
+bin/tty
+bin/ts_finddev
+bin/[[
+bin/nice
+bin/telnet
+bin/whoami
+bin/smemcap
+bin/deluser
+bin/flock
+bin/ifrename
+bin/chown
+bin/test
+bin/ts_harvest
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+bin/more
+bin/lsof
+bin/expr
+bin/du
+bin/ubimkvol
+bin/pwdx
+bin/logger
+bin/deallocvt
+bin/netstat
+bin/iwevent
+bin/reset
+bin/iwgetid
+bin/pwd
+bin/touch
+bin/date
+bin/tar
+bin/realpath
+bin/ash
+bin/cal
+bin/flash_eraseall
+bin/readlink
+dev/
+etc/
+etc/shells
+etc/hotplug/
+etc/hotplug/firmware.agent
+etc/hotplug/dasd.agent
+etc/hotplug/usb.handmap
+etc/hotplug/input.rc
+etc/hotplug/pci/
+etc/hotplug/input.agent
+etc/hotplug/hotplug.functions
+etc/hotplug/tape.agent
+etc/hotplug/usb.distmap
+etc/hotplug/blacklist
+etc/hotplug/usb/
+etc/hotplug/pci.agent
+etc/hotplug/ieee1394.agent
+etc/hotplug/scsi.agent
+etc/hotplug/net.agent
+etc/hotplug/usb.usermap
+etc/hotplug/pci.rc
+etc/hotplug/usb.rc
+etc/hotplug/usb.agent
+etc/resolv.conf
+etc/ts.conf
+etc/dropbear/
+etc/dropbear/dropbear_dss_host_key
+etc/dropbear/dropbear_rsa_host_key
+etc/inittab
+etc/host.conf
+etc/busybox.conf
+etc/rc.d/
+etc/rc.d/rc_mxc.S
+etc/rc.d/rc.local
+etc/rc.d/rc.modules
+etc/rc.d/rc.serial
+etc/rc.d/rc.conf
+etc/rc.d/rc_gpu.S
+etc/rc.d/init.d/
+etc/rc.d/init.d/syslog
+etc/rc.d/init.d/hotplug
+etc/rc.d/init.d/dropbear
+etc/rc.d/init.d/dhcp
+etc/rc.d/init.d/mount-proc-sys
+etc/rc.d/init.d/modules
+etc/rc.d/init.d/udev
+etc/rc.d/init.d/depmod
+etc/rc.d/init.d/sshd
+etc/rc.d/init.d/mdev
+etc/rc.d/init.d/inetd
+etc/rc.d/init.d/settime
+etc/rc.d/init.d/boa
+etc/rc.d/init.d/filesystems
+etc/rc.d/init.d/hostname
+etc/rc.d/init.d/smb
+etc/rc.d/init.d/devfsd
+etc/rc.d/init.d/portmap
+etc/rc.d/init.d/start_userapp
+etc/rc.d/init.d/dhcpd
+etc/rc.d/init.d/network
+etc/rc.d/rcS
+etc/modprobe.conf
+etc/udev/
+etc/udev/udev.conf
+etc/udev/rules.d/
+etc/udev/rules.d/010.rules
+etc/udev/rules.d/95-udev-late.rules
+etc/udev/rules.d/05-udev-early.rules
+etc/udev/rules.d/60-persistent-storage-tape.rules
+etc/udev/rules.d/40-alsa.rules
+etc/udev/rules.d/10-imx.rules
+etc/udev/rules.d/50-udev-default.rules
+etc/udev/rules.d/80-drivers.rules
+etc/udev/rules.d/zhiyuan_udev.sh
+etc/udev/rules.d/60-persistent-input.rules
+etc/udev/rules.d/60-persistent-storage.rules
+etc/asound.conf
+etc/services
+etc/issue.net
+etc/hosts
+etc/passwd
+etc/devfsd.conf
+etc/nsswitch.conf
+etc/exports
+etc/ltib-release
+etc/Wireless/
+etc/Wireless/RT2870STA/
+etc/Wireless/RT2870STA/RT2870STA.dat
+etc/Wireless/AP6181/
+etc/Wireless/AP6181/bcm20710a1.hcd
+etc/Wireless/AP6181/fw_bcm40181a2_apsta.bin
+etc/Wireless/AP6181/nvram_ap6181.txt
+etc/Wireless/AP6181/fw_bcm40181a2_p2p.bin
+etc/Wireless/AP6181/fw_bcm40181a2.bin
+g_file_storage gadget: high speed config #1
+etc/Wireless/AP6181/fw_bcmdhd.bin
+etc/passwd-
+etc/pointercal
+etc/shadow-
+etc/udhcpd.conf
+etc/hotplug.d/
+etc/hotplug.d/default/
+etc/hotplug.d/default/default.hotplug
+etc/profile
+etc/sysctl.conf
+etc/mtab
+etc/shadow
+etc/hosts.allow
+etc/hosts.deny
+etc/inputrc
+etc/fstab
+etc/securetty
+etc/mdev.conf
+etc/printcap
+etc/issue
+etc/protocols
+etc/mime.types
+etc/inetd.conf
+etc/wpa_supplicant.conf
+etc/group
+home/
+home/user/
+home/user/.rhosts
+iptables/
+iptables/share/
+iptables/share/man/
+iptables/share/man/man8/
+iptables/share/man/man8/ip6tables-save.8
+iptables/share/man/man8/ip6tables.8
+iptables/share/man/man8/iptables-save.8
+iptables/share/man/man8/iptables.8
+iptables/share/man/man8/iptables-restore.8
+iptables/share/man/man8/ip6tables-restore.8
+iptables/share/man/man8/iptables-extensions.8
+iptables/share/man/man1/
+iptables/share/man/man1/iptables-xml.1
+iptables/include/
+iptables/include/libiptc/
+iptables/include/libiptc/xtcshared.h
+iptables/include/libiptc/libxtc.h
+iptables/include/libiptc/ipt_kernel_headers.h
+iptables/include/libiptc/libip6tc.h
+iptables/include/libiptc/libiptc.h
+iptables/include/xtables.h
+iptables/include/xtables-version.h
+iptables/lib/
+iptables/lib/libxtables.so.10.0.0
+iptables/lib/libip4tc.so.0
+iptables/lib/libip4tc.so
+iptables/lib/libip6tc.so
+iptables/lib/libiptc.la
+iptables/lib/xtables/
+iptables/lib/xtables/libxt_CT.so
+iptables/lib/xtables/libip6t_NETMAP.so
+iptables/lib/xtables/libipt_SAME.so
+iptables/lib/xtables/libip6t_hbh.so
+iptables/lib/xtables/libipt_ttl.so
+iptables/lib/xtables/libip6t_REDIRECT.so
+iptables/lib/xtables/libxt_TRACE.so
+iptables/lib/xtables/libxt_dscp.so
+iptables/lib/xtables/libxt_bpf.so
+iptables/lib/xtables/libxt_NOTRACK.so
+iptables/lib/xtables/libxt_CONNMARK.so
+iptables/lib/xtables/libip6t_SNPT.so
+iptables/lib/xtables/libxt_rateest.so
+iptables/lib/xtables/libxt_NFLOG.so
+iptables/lib/xtables/libxt_conntrack.so
+g_file_storage gadget: high speed config #1
+iptables/lib/xtables/libipt_unclean.so
+iptables/lib/xtables/libxt_iprange.so
+iptables/lib/xtables/libxt_TOS.so
+iptables/lib/xtables/libxt_ecn.so
+iptables/lib/xtables/libipt_ah.so
+iptables/lib/xtables/libxt_devgroup.so
+iptables/lib/xtables/libxt_mac.so
+iptables/lib/xtables/libxt_multiport.so
+iptables/lib/xtables/libip6t_frag.so
+iptables/lib/xtables/libxt_NFQUEUE.so
+iptables/lib/xtables/libipt_REDIRECT.so
+iptables/lib/xtables/libxt_cpu.so
+iptables/lib/xtables/libipt_REJECT.so
+iptables/lib/xtables/libip6t_hl.so
+iptables/lib/xtables/libip6t_mh.so
+iptables/lib/xtables/libxt_policy.so
+iptables/lib/xtables/libxt_SECMARK.so
+iptables/lib/xtables/libxt_pkttype.so
+iptables/lib/xtables/libxt_quota.so
+iptables/lib/xtables/libip6t_REJECT.so
+iptables/lib/xtables/libxt_u32.so
+iptables/lib/xtables/libxt_CLASSIFY.so
+iptables/lib/xtables/libxt_helper.so
+iptables/lib/xtables/libip6t_rt.so
+iptables/lib/xtables/libxt_state.so
+iptables/lib/xtables/libipt_realm.so
+iptables/lib/xtables/libxt_string.so
+iptables/lib/xtables/libip6t_ah.so
+iptables/lib/xtables/libipt_icmp.so
+iptables/lib/xtables/libxt_connlimit.so
+iptables/lib/xtables/libxt_connmark.so
+iptables/lib/xtables/libxt_nfacct.so
+iptables/lib/xtables/libipt_DNAT.so
+iptables/lib/xtables/libipt_CLUSTERIP.so
+iptables/lib/xtables/libxt_sctp.so
+iptables/lib/xtables/libxt_comment.so
+iptables/lib/xtables/libxt_hashlimit.so
+iptables/lib/xtables/libipt_TTL.so
+iptables/lib/xtables/libxt_statistic.so
+iptables/lib/xtables/libxt_owner.so
+iptables/lib/xtables/libxt_mark.so
+iptables/lib/xtables/libxt_rpfilter.so
+iptables/lib/xtables/libip6t_dst.so
+iptables/lib/xtables/libxt_MARK.so
+iptables/lib/xtables/libip6t_MASQUERADE.so
+iptables/lib/xtables/libip6t_SNAT.so
+g_file_storage gadget: high speed config #1
+iptables/lib/xtables/libip6t_ipv6header.so
+iptables/lib/xtables/libxt_udp.so
+iptables/lib/xtables/libxt_osf.so
+iptables/lib/xtables/libxt_LED.so
+iptables/lib/xtables/libxt_tcpmss.so
+iptables/lib/xtables/libxt_physdev.so
+iptables/lib/xtables/libxt_SET.so
+iptables/lib/xtables/libxt_limit.so
+iptables/lib/xtables/libxt_time.so
+iptables/lib/xtables/libipt_LOG.so
+iptables/lib/xtables/libxt_DSCP.so
+iptables/lib/xtables/libip6t_HL.so
+iptables/lib/xtables/libxt_connbytes.so
+iptables/lib/xtables/libxt_ipvs.so
+iptables/lib/xtables/libxt_set.so
+iptables/lib/xtables/libipt_NETMAP.so
+iptables/lib/xtables/libxt_TPROXY.so
+iptables/lib/xtables/libxt_esp.so
+iptables/lib/xtables/libxt_TEE.so
+iptables/lib/xtables/libxt_tos.so
+iptables/lib/xtables/libxt_CHECKSUM.so
+iptables/lib/xtables/libxt_recent.so
+iptables/lib/xtables/libip6t_eui64.so
+iptables/lib/xtables/libip6t_icmp6.so
+iptables/lib/xtables/libipt_ECN.so
+iptables/lib/xtables/libxt_TCPMSS.so
+iptables/lib/xtables/libipt_SNAT.so
+iptables/lib/xtables/libxt_cluster.so
+iptables/lib/xtables/libxt_AUDIT.so
+iptables/lib/xtables/libxt_IDLETIMER.so
+iptables/lib/xtables/libxt_RATEEST.so
+iptables/lib/xtables/libxt_standard.so
+iptables/lib/xtables/libip6t_DNAT.so
+iptables/lib/xtables/libipt_MIRROR.so
+iptables/lib/xtables/libxt_HMARK.so
+iptables/lib/xtables/libxt_socket.so
+iptables/lib/xtables/libipt_ULOG.so
+iptables/lib/xtables/libxt_TCPOPTSTRIP.so
+iptables/lib/xtables/libxt_dccp.so
+iptables/lib/xtables/libipt_MASQUERADE.so
+iptables/lib/xtables/libxt_addrtype.so
+iptables/lib/xtables/libip6t_LOG.so
+iptables/lib/xtables/libxt_CONNSECMARK.so
+iptables/lib/xtables/libxt_length.so
+iptables/lib/xtables/libxt_tcp.so
+iptables/lib/xtables/libip6t_DNPT.so
+iptables/lib/libiptc.so.0.0.0
+iptables/lib/libxtables.so.10
+iptables/lib/libip6tc.so.0
+iptables/lib/libiptc.so
+iptables/lib/libip6tc.la
+iptables/lib/libip4tc.la
+iptables/lib/libxtables.so
+iptables/lib/libip4tc.so.0.1.0
+g_file_storage gadget: high speed config #1
+iptables/lib/pkgconfig/
+iptables/lib/pkgconfig/libip6tc.pc
+iptables/lib/pkgconfig/libip4tc.pc
+iptables/lib/pkgconfig/libiptc.pc
+iptables/lib/pkgconfig/xtables.pc
+iptables/lib/libxtables.la
+iptables/lib/libiptc.so.0
+iptables/lib/libip6tc.so.0.1.0
+iptables/bin/
+iptables/bin/iptables-xml
+iptables/sbin/
+iptables/sbin/ip6tables-restore
+iptables/sbin/iptables-restore
+iptables/sbin/xtables-multi
+iptables/sbin/ip6tables-save
+iptables/sbin/iptables
+iptables/sbin/ip6tables
+iptables/sbin/iptables-save
+lib/
+lib/libthread_db-1.0.so
+lib/libvolume_id.so.0.81.0
+lib/libutil-2.13.so
+lib/libanl.so.1
+lib/libutil.so.1
+lib/libmemusage.so
+lib/libgcc_s.so
+lib/libdl.so.2
+lib/libnss_nisplus.so.2
+lib/libnss_nis.so.2
+lib/modules/
+lib/modules/lradc.ko
+lib/modules/imx28x_key.ko
+lib/libvolume_id.so.0
+lib/udev/
+lib/udev/path_id
+lib/udev/usb_id
+lib/udev/firmware.sh
+lib/udev/vol_id
+lib/libm.so.6
+lib/libnsl-2.13.so
+lib/libnss_compat.so.2
+lib/libresolv-2.13.so
+lib/libthread_db.so.1
+lib/libgcc_s.so.1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+lib/libnss_dns-2.13.so
+lib/libSegFault.so
+lib/libBrokenLocale-2.13.so
+lib/libnss_hesiod.so.2
+lib/libstdc++.so.6
+lib/libnss_hesiod-2.13.so
+lib/libresolv.so.2
+lib/libstdc++.so.6.0.16-gdb.py
+lib/librt-2.13.so
+lib/libnss_files-2.13.so
+lib/ld-2.13.so
+lib/libnss_dns.so.2
+lib/ld-linux.so.3
+lib/libnsl.so.1
+lib/libnss_nis-2.13.so
+lib/libpthread.so.0
+lib/libpcprofile.so
+lib/libm-2.13.so
+g_file_storage gadget: high speed config #1
+lib/libanl-2.13.so
+lib/libdl-2.13.so
+lib/libstdc++.so.6.0.16
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+lib/libnss_files.so.2
+lib/libcrypt.so.1
+lib/librt.so.1
+lib/libcrypt-2.13.so
+lib/libc.so.6
+lib/libnss_nisplus-2.13.so
+lib/libnss_compat-2.13.so
+lib/libBrokenLocale.so.1
+lib/libc-2.13.so
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+lib/libpthread-2.13.so
+media/
+mnt/
+mnt/cdrom/
+mnt/src/
+mnt/nfs/
+mnt/rwfs/
+mnt/floppy/
+opt/
+proc/
+root/
+root/lradc_test
+root/g_file_storage.ko
+root/hello
+root/usb_storage_up
+root/start_qt
+root/.qws/
+root/.qws/cache/
+root/.qws/cache/Qt/
+root/.qws/cache/Qt/demobrowser/
+root/.qws/cache/Qt/demobrowser/http/
+root/.kobs
+root/lradc.ko
+root/qt_hellow
+root/qt_hellow_zh
+root/Settings/
+root/Settings/Trolltech.conf
+root/wdt_test
+root/i2c_ds2460_test
+root/gpio_driver.ko
+sbin/
+sbin/insmod
+sbin/fbset
+sbin/mkfs.ext2
+sbin/hotplug
+sbin/modinfo
+sbin/lsmod
+sbin/chroot
+sbin/udevadm
+sbin/mkfs.minix
+sbin/dhcprelay
+sbin/nbd-client
+sbin/mkswap
+sbin/reboot
+sbin/fdisk
+sbin/udhcpc
+sbin/fsck.minix
+sbin/poweroff
+sbin/setlogcons
+sbin/udhcpd
+sbin/swapon
+sbin/swapoff
+sbin/ntpd
+sbin/blockdev
+sbin/sysctl
+sbin/inetd
+sbin/ifconfig
+sbin/loadkmap
+sbin/udevtrigger
+sbin/ubiattach
+sbin/ubidetach
+sbin/init
+sbin/bootchartd
+sbin/arp
+sbin/ubirmvol
+sbin/route
+sbin/modprobe
+sbin/klogd
+sbin/watchdog
+sbin/syslogd
+sbin/httpd
+sbin/logread
+sbin/udevcontrol
+sbin/losetup
+sbin/udevd
+sbin/rmmod
+sbin/loadfont
+sbin/adjtimex
+sbin/ubimkvol
+sbin/telnetd
+sbin/pivot_root
+sbin/rdate
+sbin/halt
+sbin/hwclock
+sbin/mke2fs
+sbin/getty
+sbin/ubirsvol
+sbin/udevsettle
+sbin/ubiupdatevol
+Settings/
+Settings/Trolltech.conf
+sys/
+tmp/
+tmp/ltib/
+usr/
+usr/share/
+usr/share/udhcpc/
+usr/share/udhcpc/default.script
+usr/share/zylauncher/
+usr/share/zylauncher/fb_set
+usr/share/zylauncher/start_zylauncher
+usr/share/zylauncher/input_type
+usr/share/zylauncher/framework/
+usr/share/zylauncher/framework/qt_pointercal
+usr/share/zylauncher/framework/plugins/
+usr/share/zylauncher/framework/plugins/decorations/
+usr/share/zylauncher/framework/plugins/decorations/libzydecoration.so
+usr/share/zylauncher/framework/qml/
+usr/share/zylauncher/framework/qml/config.js
+usr/share/zylauncher/framework/qml/drawerfunc.js
+usr/share/zylauncher/framework/qml/colibri/
+usr/share/zylauncher/framework/qml/colibri/javascripts/
+usr/share/zylauncher/framework/qml/colibri/javascripts/functions.js
+usr/share/zylauncher/framework/qml/colibri/javascripts/date.js
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/all-wcprops
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/text-base/
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/text-base/functions.js.svn-base
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/text-base/histogram2.js.svn-base
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/text-base/histogram.js.svn-base
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/text-base/keyboard.js.svn-base
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/text-base/datepicker.js.svn-base
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/text-base/date.js.svn-base
+usr/share/zylauncher/framework/qml/colibri/javascripts/.svn/entries
+usr/share/zylauncher/framework/qml/colibri/javascripts/histogram2.js
+usr/share/zylauncher/framework/qml/colibri/javascripts/histogram.js
+usr/share/zylauncher/framework/qml/colibri/javascripts/datepicker.js
+usr/share/zylauncher/framework/qml/colibri/javascripts/keyboard.js
+usr/share/zylauncher/framework/qml/colibri/CLDatePicker.qml
+usr/share/zylauncher/framework/qml/colibri/CLCheckBox.qml
+usr/share/zylauncher/framework/qml/colibri/CLKeyboard.qml
+usr/share/zylauncher/framework/qml/colibri/.svn/
+usr/share/zylauncher/framework/qml/colibri/.svn/all-wcprops
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLDatePicker.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLLineEdit.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLDial.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLScrollBarVertical.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLKeyboard.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLSlider.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLListbox.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLSliderVertical.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLTab.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLLayer.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLCarousel.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLProgressBar.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLStyle.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLHistogram.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLButton.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLCheckBox.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLComboBox.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLScrollBar.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLRating.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/text-base/CLTextArea.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/.svn/entries
+usr/share/zylauncher/framework/qml/colibri/CLTab.qml
+usr/share/zylauncher/framework/qml/colibri/CLScrollBarVertical.qml
+usr/share/zylauncher/framework/qml/colibri/CLLineEdit.qml
+usr/share/zylauncher/framework/qml/colibri/CLComboBox.qml
+usr/share/zylauncher/framework/qml/colibri/CLDial.qml
+usr/share/zylauncher/framework/qml/colibri/CLStyle.qml
+usr/share/zylauncher/framework/qml/colibri/CLProgressBar.qml
+usr/share/zylauncher/framework/qml/colibri/CLRating.qml
+usr/share/zylauncher/framework/qml/colibri/CLTextArea.qml
+usr/share/zylauncher/framework/qml/colibri/CLListbox.qml
+usr/share/zylauncher/framework/qml/colibri/CLSliderVertical.qml
+usr/share/zylauncher/framework/qml/colibri/CLHistogram.qml
+usr/share/zylauncher/framework/qml/colibri/gradients/
+usr/share/zylauncher/framework/qml/colibri/gradients/Grey.qml
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/all-wcprops
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/text-base/
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/text-base/LightBlue.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/text-base/Red.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/text-base/Grey.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/text-base/Blue.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/gradients/.svn/entries
+usr/share/zylauncher/framework/qml/colibri/gradients/Red.qml
+usr/share/zylauncher/framework/qml/colibri/gradients/LightBlue.qml
+usr/share/zylauncher/framework/qml/colibri/gradients/Blue.qml
+usr/share/zylauncher/framework/qml/colibri/CLCarousel.qml
+usr/share/zylauncher/framework/qml/colibri/CLLayer.qml
+usr/share/zylauncher/framework/qml/colibri/CLSlider.qml
+usr/share/zylauncher/framework/qml/colibri/CLScrollBar.qml
+usr/share/zylauncher/framework/qml/colibri/CLButton.qml
+usr/share/zylauncher/framework/qml/colibri/images/
+usr/share/zylauncher/framework/qml/colibri/images/lock_open_web.png
+usr/share/zylauncher/framework/qml/colibri/images/tick.png
+usr/share/zylauncher/framework/qml/colibri/images/cover5.jpg
+usr/share/zylauncher/framework/qml/colibri/images/.svn/
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover1.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/logo_transparent.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/logo_transparent2.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover8.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/tab.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover3.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/star_off.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/arrow_up_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover6.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/tick.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover2.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/enter_50x70.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/shift_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover4.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/star_on.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover5.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/delete_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/logo.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/ok_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/arrow_left_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/backspace_50x70.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/lock_closed_web.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/arrow_right_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/arrow_down_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/lock_open_web.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/cover7.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/prop-base/calendar_icon.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/all-wcprops
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover1.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/logo_transparent.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/logo_transparent2.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover8.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/tab.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover3.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/star_off.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/arrow_up_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover6.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/tick.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover2.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/enter_50x70.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/shift_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover4.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/star_on.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover5.jpg.svn-base
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/delete_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/logo.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/ok_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/arrow_left_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/backspace_50x70.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/lock_closed_web.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/arrow_right_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/arrow_down_50x50.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/lock_open_web.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/cover7.jpg.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/text-base/calendar_icon.png.svn-base
+usr/share/zylauncher/framework/qml/colibri/images/.svn/entries
+usr/share/zylauncher/framework/qml/colibri/images/cover7.jpg
+usr/share/zylauncher/framework/qml/colibri/images/backspace_50x70.png
+usr/share/zylauncher/framework/qml/colibri/images/arrow_up_50x50.png
+usr/share/zylauncher/framework/qml/colibri/images/tab.png
+usr/share/zylauncher/framework/qml/colibri/images/shift_50x50.png
+usr/share/zylauncher/framework/qml/colibri/images/logo_transparent2.png
+usr/share/zylauncher/framework/qml/colibri/images/cover4.jpg
+usr/share/zylauncher/framework/qml/colibri/images/logo.jpg
+usr/share/zylauncher/framework/qml/colibri/images/componentImages/
+usr/share/zylauncher/framework/qml/colibri/images/componentImages/.svn/
+usr/share/zylauncher/framework/qml/colibri/images/componentImages/.svn/all-wcprops
+usr/share/zylauncher/framework/qml/colibri/images/componentImages/.svn/entries
+usr/share/zylauncher/framework/qml/colibri/images/star_on.png
+usr/share/zylauncher/framework/qml/colibri/images/star_off.png
+usr/share/zylauncher/framework/qml/colibri/images/lock_closed_web.png
+usr/share/zylauncher/framework/qml/colibri/images/logo_transparent.png
+usr/share/zylauncher/framework/qml/colibri/images/delete_50x50.png
+usr/share/zylauncher/framework/qml/colibri/images/enter_50x70.png
+usr/share/zylauncher/framework/qml/colibri/images/cover3.jpg
+usr/share/zylauncher/framework/qml/colibri/images/cover1.jpg
+usr/share/zylauncher/framework/qml/colibri/images/calendar_icon.png
+usr/share/zylauncher/framework/qml/colibri/images/arrow_down_50x50.png
+usr/share/zylauncher/framework/qml/colibri/images/ok_50x50.png
+usr/share/zylauncher/framework/qml/colibri/images/arrow_right_50x50.png
+usr/share/zylauncher/framework/qml/colibri/images/cover2.jpg
+usr/share/zylauncher/framework/qml/colibri/images/cover6.jpg
+usr/share/zylauncher/framework/qml/colibri/images/cover8.jpg
+usr/share/zylauncher/framework/qml/colibri/images/arrow_left_50x50.png
+usr/share/zylauncher/framework/qml/colibri/includes/
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/all-wcprops
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/Fruits.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/KeyboardButton.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/RatingStar.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/Screen.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/TestItemList.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/TestCoverList.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/text-base/HistogramColumn.qml.svn-base
+usr/share/zylauncher/framework/qml/colibri/includes/.svn/entries
+usr/share/zylauncher/framework/qml/colibri/includes/KeyboardButton.qml
+usr/share/zylauncher/framework/qml/colibri/includes/HistogramColumn.qml
+usr/share/zylauncher/framework/qml/colibri/includes/TestCoverList.qml
+usr/share/zylauncher/framework/qml/colibri/includes/Fruits.qml
+usr/share/zylauncher/framework/qml/colibri/includes/TestItemList.qml
+usr/share/zylauncher/framework/qml/colibri/includes/RatingStar.qml
+usr/share/zylauncher/framework/qml/colibri/includes/Screen.qml
+usr/share/zylauncher/framework/qml/backlight.js
+usr/share/zylauncher/framework/qml/demo.qml
+usr/share/zylauncher/framework/qml/MenuButton.qml
+usr/share/zylauncher/framework/qml/Title.qml
+usr/share/zylauncher/framework/qml/ExitButton.qml
+usr/share/zylauncher/framework/qml/OffTimeSet.qml
+usr/share/zylauncher/framework/qml/MutexCLCheckBox.qml
+usr/share/zylauncher/framework/qml/keyfunc.js
+usr/share/zylauncher/framework/qml/demofunc.js
+usr/share/zylauncher/framework/qml/ScrollBar.qml
+usr/share/zylauncher/framework/qml/ReadOnlyTextEdit.qml
+usr/share/zylauncher/framework/qml/ProButton.qml
+usr/share/zylauncher/framework/qml/System.qml
+usr/share/zylauncher/framework/qml/mutex.js
+usr/share/zylauncher/framework/qml/BacklightSlider.qml
+usr/share/zylauncher/framework/framework
+usr/share/zylauncher/demonstration/
+usr/share/zylauncher/demonstration/demos/
+usr/share/zylauncher/demonstration/demos/tooltips/
+usr/share/zylauncher/demonstration/demos/tooltips/tooltips
+usr/share/zylauncher/demonstration/demos/tooltips/images/
+usr/share/zylauncher/demonstration/demos/tooltips/images/triangle.png
+usr/share/zylauncher/demonstration/demos/tooltips/images/square.png
+usr/share/zylauncher/demonstration/demos/tooltips/images/circle.png
+usr/share/zylauncher/demonstration/demos/positioners/
+usr/share/zylauncher/demonstration/demos/positioners/positioners.qmlproject
+usr/share/zylauncher/demonstration/demos/positioners/Button.qml
+usr/share/zylauncher/demonstration/demos/positioners/add.png
+usr/share/zylauncher/demonstration/demos/positioners/start-positioners
+usr/share/zylauncher/demonstration/demos/positioners/positioners.qml
+usr/share/zylauncher/demonstration/demos/positioners/del.png
+usr/share/zylauncher/demonstration/demos/easing/
+usr/share/zylauncher/demonstration/demos/easing/easing.qml
+usr/share/zylauncher/demonstration/demos/easing/easing.qmlproject
+usr/share/zylauncher/demonstration/demos/easing/start-easing
+usr/share/zylauncher/demonstration/demos/easing/content/
+usr/share/zylauncher/demonstration/demos/easing/content/QuitButton.qml
+usr/share/zylauncher/demonstration/demos/easing/content/quit.png
+usr/share/zylauncher/demonstration/demos/appchooser/
+usr/share/zylauncher/demonstration/demos/appchooser/k3b.png
+usr/share/zylauncher/demonstration/demos/appchooser/appchooser
+usr/share/zylauncher/demonstration/demos/appchooser/akregator.png
+usr/share/zylauncher/demonstration/demos/appchooser/digikam.png
+usr/share/zylauncher/demonstration/demos/appchooser/accessories-dictionary.png
+usr/share/zylauncher/demonstration/demos/syntaxhighlighter/
+usr/share/zylauncher/demonstration/demos/syntaxhighlighter/syntaxhighlighter
+usr/share/zylauncher/demonstration/demos/syntaxhighlighter/mainwindow.h
+usr/share/zylauncher/demonstration/demos/fluidlauncher/
+usr/share/zylauncher/demonstration/demos/fluidlauncher/fluidlauncher
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/share/zylauncher/demonstration/demos/fluidlauncher/slides/
+usr/share/zylauncher/demonstration/demos/fluidlauncher/slides/demo_6.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/slides/demo_4.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/slides/demo_3.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/slides/demo_5.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/slides/demo_2.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/slides/demo_1.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/config.xml
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/elasticnodes.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/desktopservices_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/lightmaps.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/weatherinfo.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/mediaplayer.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/pathstroke.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/softkeys_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/embeddedsvgviewer_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/flightinfo_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/embeddedsvgviewer.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/raycasting.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/flickable.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/fridgemagnets_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/deform.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/digiflip.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/ftp_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/anomaly_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/concentriccircles.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/context2d_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/wiggly_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/styledemo.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/styledemo_s60.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/wiggly.png
+usr/share/zylauncher/demonstration/demos/fluidlauncher/screenshots/saxbookmarks_s60.png
+usr/share/zylauncher/demonstration/demos/behaviors/
+usr/share/zylauncher/demonstration/demos/behaviors/snapshot1.png
+usr/share/zylauncher/demonstration/demos/behaviors/wigglytext.qml
+usr/share/zylauncher/demonstration/demos/behaviors/behavior-example.qml
+usr/share/zylauncher/demonstration/demos/behaviors/SideRect.qml
+usr/share/zylauncher/demonstration/demos/behaviors/start-behaviors
+usr/share/zylauncher/demonstration/demos/behaviors/behaviors.qmlproject
+usr/share/zylauncher/demonstration/demos/stylesheet/
+usr/share/zylauncher/demonstration/demos/stylesheet/layouts/
+usr/share/zylauncher/demonstration/demos/stylesheet/layouts/default.ui
+usr/share/zylauncher/demonstration/demos/stylesheet/layouts/pagefold.ui
+usr/share/zylauncher/demonstration/demos/stylesheet/stylesheet
+usr/share/zylauncher/demonstration/demos/stylesheet/qss/
+usr/share/zylauncher/demonstration/demos/stylesheet/qss/default.qss
+usr/share/zylauncher/demonstration/demos/stylesheet/qss/coffee.qss
+usr/share/zylauncher/demonstration/demos/stylesheet/qss/pagefold.qss
+usr/share/zylauncher/demonstration/demos/stylesheet/images/
+usr/share/zylauncher/demonstration/demos/stylesheet/images/up_arrow.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/pushbutton_pressed.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/sizegrip.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/radiobutton_checked.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spindown_off.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/radiobutton_unchecked_hover.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/pushbutton.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/checkbox_checked_hover.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/radiobutton_unchecked.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spindown_pressed.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/radiobutton_checked_hover.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/radiobutton_checked_pressed.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/pushbutton_hover.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/radiobutton_unchecked_pressed.png
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spinup.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spinup_pressed.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/checkbox_unchecked_hover.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spindown.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/checkbox_unchecked.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/checkbox_unchecked_pressed.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/frame.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/down_arrow_disabled.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/checkbox_checked.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/pagefold.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spindown_hover.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spinup_hover.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/checkbox_checked_pressed.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/up_arrow_disabled.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/spinup_off.png
+usr/share/zylauncher/demonstration/demos/stylesheet/images/down_arrow.png
+usr/share/zylauncher/demonstration/demos/clocks/
+usr/share/zylauncher/demonstration/demos/clocks/content/
+usr/share/zylauncher/demonstration/demos/clocks/content/QuitButton.qml
+usr/share/zylauncher/demonstration/demos/clocks/content/hour.png
+usr/share/zylauncher/demonstration/demos/clocks/content/quit.png
+usr/share/zylauncher/demonstration/demos/clocks/content/minute.png
+usr/share/zylauncher/demonstration/demos/clocks/content/background.png
+usr/share/zylauncher/demonstration/demos/clocks/content/Clock.qml
+usr/share/zylauncher/demonstration/demos/clocks/content/center.png
+usr/share/zylauncher/demonstration/demos/clocks/content/second.png
+usr/share/zylauncher/demonstration/demos/clocks/content/clock-night.png
+usr/share/zylauncher/demonstration/demos/clocks/content/clock.png
+usr/share/zylauncher/demonstration/demos/clocks/clocks.qmlproject
+usr/share/zylauncher/demonstration/demos/clocks/start-clocks
+usr/share/zylauncher/demonstration/demos/clocks/clocks.qml
+usr/share/zylauncher/demonstration/demos/states/
+usr/share/zylauncher/demonstration/demos/states/states.qml
+usr/share/zylauncher/demonstration/demos/states/qt-logo.png
+usr/share/zylauncher/demonstration/demos/states/transitions.qml
+usr/share/zylauncher/demonstration/demos/states/states.qmlproject
+usr/share/zylauncher/demonstration/demos/states/start-states
+usr/share/zylauncher/demonstration/demos/qml/
+usr/share/zylauncher/demonstration/demos/qml/spinner/
+usr/share/zylauncher/demonstration/demos/qml/spinner/spinner.qmlproject
+usr/share/zylauncher/demonstration/demos/qml/spinner/content/
+usr/share/zylauncher/demonstration/demos/qml/spinner/content/spinner-bg.png
+usr/share/zylauncher/demonstration/demos/qml/spinner/content/Spinner.qml
+usr/share/zylauncher/demonstration/demos/qml/spinner/content/spinner-select.png
+usr/share/zylauncher/demonstration/demos/qml/spinner/start-spinner
+usr/share/zylauncher/demonstration/demos/qml/spinner/main.qml
+usr/share/zylauncher/demonstration/demos/qml/progressbar/
+usr/share/zylauncher/demonstration/demos/qml/progressbar/start-progressbar
+usr/share/zylauncher/demonstration/demos/qml/progressbar/progressbar.qmlproject
+usr/share/zylauncher/demonstration/demos/qml/progressbar/content/
+usr/share/zylauncher/demonstration/demos/qml/progressbar/content/ProgressBar.qml
+usr/share/zylauncher/demonstration/demos/qml/progressbar/content/background.png
+usr/share/zylauncher/demonstration/demos/qml/progressbar/main.qml
+usr/share/zylauncher/demonstration/demos/qml/tabwidget/
+usr/share/zylauncher/demonstration/demos/qml/tabwidget/tabwidget.qmlproject
+usr/share/zylauncher/demonstration/demos/qml/tabwidget/tab.png
+usr/share/zylauncher/demonstration/demos/qml/tabwidget/start-tabwidget
+usr/share/zylauncher/demonstration/demos/qml/tabwidget/TabWidget.qml
+usr/share/zylauncher/demonstration/demos/qml/tabwidget/main.qml
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/start-dialcontrol
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/dialcontrol.qml
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/needle.png
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/Dial.qml
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/QuitButton.qml
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/quit.png
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/overlay.png
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/needle_shadow.png
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/content/background.png
+usr/share/zylauncher/demonstration/demos/qml/dialcontrol/dialcontrol.qmlproject
+usr/share/zylauncher/demonstration/demos/sysMonitor/
+usr/share/zylauncher/demonstration/demos/sysMonitor/infoWidget/
+usr/share/zylauncher/demonstration/demos/sysMonitor/infoWidget/board_info.sh
+usr/share/zylauncher/demonstration/demos/sysMonitor/img/
+usr/share/zylauncher/demonstration/demos/sysMonitor/img/tux.png
+usr/share/zylauncher/demonstration/demos/sysMonitor/sysMonitor
+usr/share/zylauncher/demonstration/demos/sysMonitor/cpuplot/
+usr/share/zylauncher/demonstration/demos/sysMonitor/cpuplot/resource_info.sh
+usr/share/zylauncher/demonstration/demos/moveblocks/
+usr/share/zylauncher/demonstration/demos/moveblocks/linux_logo.png
+usr/share/zylauncher/demonstration/demos/moveblocks/qt_logo.png
+usr/share/zylauncher/demonstration/demos/moveblocks/quit.png
+usr/share/zylauncher/demonstration/demos/moveblocks/gnu_logo.png
+usr/share/zylauncher/demonstration/demos/moveblocks/moveblocks
+usr/share/zylauncher/demonstration/demos/dockwidgets/
+usr/share/zylauncher/demonstration/demos/dockwidgets/dockwidgets
+usr/share/zylauncher/demonstration/demos/dockwidgets/images/
+usr/share/zylauncher/demonstration/demos/dockwidgets/images/save.png
+usr/share/zylauncher/demonstration/demos/dockwidgets/images/print.png
+usr/share/zylauncher/demonstration/demos/dockwidgets/images/undo.png
+usr/share/zylauncher/demonstration/demos/dockwidgets/images/new.png
+usr/share/zylauncher/demonstration/demos/pixelator/
+usr/share/zylauncher/demonstration/demos/pixelator/pixelator
+usr/share/zylauncher/demonstration/demos/pixelator/images/
+usr/share/zylauncher/demonstration/demos/pixelator/images/qt.png
+usr/share/zylauncher/demonstration/demos/tools/
+usr/share/zylauncher/demonstration/demos/tools/socketcan/
+usr/share/zylauncher/demonstration/demos/tools/socketcan/socketcan
+usr/share/zylauncher/demonstration/demos/tools/serialport/
+usr/share/zylauncher/demonstration/demos/tools/serialport/serialport
+usr/share/zylauncher/demonstration/demos/tools/rtc/
+usr/share/zylauncher/demonstration/demos/tools/rtc/rtc
+usr/share/zylauncher/demonstration/demos/tools/filebrowser/
+usr/share/zylauncher/demonstration/demos/tools/filebrowser/filebrowser
+usr/share/zylauncher/demonstration/demos/tools/netinfo/
+usr/share/zylauncher/demonstration/demos/tools/netinfo/ethinfo.sh
+usr/share/zylauncher/demonstration/demos/tools/netinfo/netinfo.sh
+usr/share/zylauncher/demonstration/demos/tools/netinfo/netinfo
+usr/share/zylauncher/demonstration/demos/small_demos/
+usr/share/zylauncher/demonstration/demos/small_demos/digitalclock/
+usr/share/zylauncher/demonstration/demos/small_demos/digitalclock/digitalclock
+usr/share/zylauncher/demonstration/demos/small_demos/hello/
+usr/share/zylauncher/demonstration/demos/small_demos/hello/hello
+usr/share/zylauncher/demonstration/demos/small_demos/hello/start-hello
+usr/share/zylauncher/demonstration/demos/small_demos/simpledecoration/
+usr/share/zylauncher/demonstration/demos/small_demos/simpledecoration/simpledecoration
+usr/share/zylauncher/demonstration/demos/small_demos/sliders/
+usr/share/zylauncher/demonstration/demos/small_demos/sliders/sliders
+usr/share/zylauncher/demonstration/menus/
+usr/share/zylauncher/demonstration/menus/qmldir
+usr/share/zylauncher/demonstration/menus/SmallDemos.qml
+usr/share/zylauncher/demonstration/menus/ToolsDemos.qml
+usr/share/zylauncher/demonstration/menus/QmlDemos.qml
+usr/share/zylauncher/demonstration/menus/MainMenu.qml
+usr/share/zylauncher/demonstration/images/
+usr/share/zylauncher/demonstration/images/ok.png
+usr/share/zylauncher/demonstration/images/behavior.png
+usr/share/zylauncher/demonstration/images/shift_0.png
+usr/share/zylauncher/demonstration/images/button2.png
+usr/share/zylauncher/demonstration/images/button3.png
+usr/share/zylauncher/demonstration/images/p5.png
+usr/share/zylauncher/demonstration/images/back.png
+usr/share/zylauncher/demonstration/images/serialport.png
+usr/share/zylauncher/demonstration/images/cancel.png
+usr/share/zylauncher/demonstration/images/button1.png
+usr/share/zylauncher/demonstration/images/backspace_50x70.png
+usr/share/zylauncher/demonstration/images/bulb_on_64.png
+usr/share/zylauncher/demonstration/images/sysMonitor.png
+usr/share/zylauncher/demonstration/images/exit.png
+usr/share/zylauncher/demonstration/images/background.jpg
+usr/share/zylauncher/demonstration/images/keyboard.png
+usr/share/zylauncher/demonstration/images/rtc.png
+usr/share/zylauncher/demonstration/images/block.png
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/share/zylauncher/demonstration/images/cookie_2.png
+usr/share/zylauncher/demonstration/images/p4.png
+usr/share/zylauncher/demonstration/images/button5.png
+usr/share/zylauncher/demonstration/images/tools.png
+usr/share/zylauncher/demonstration/images/stylesheet.png
+usr/share/zylauncher/demonstration/images/p1.png
+usr/share/zylauncher/demonstration/images/netinfo.png
+usr/share/zylauncher/demonstration/images/shift_2.png
+usr/share/zylauncher/demonstration/images/button6.png
+usr/share/zylauncher/demonstration/images/enter_50x70.png
+usr/share/zylauncher/demonstration/images/cookie_3.png
+usr/share/zylauncher/demonstration/images/note.png
+usr/share/zylauncher/demonstration/images/cookie.png
+usr/share/zylauncher/demonstration/images/p2.png
+usr/share/zylauncher/demonstration/images/cookie_4.png
+usr/share/zylauncher/demonstration/images/shift_1.png
+usr/share/zylauncher/demonstration/images/switch.png
+usr/share/zylauncher/demonstration/images/filebrower.png
+usr/share/zylauncher/demonstration/images/button4.png
+usr/share/zylauncher/demonstration/images/cookie_1.png
+usr/share/zylauncher/demonstration/images/cookie_cry.png
+usr/share/zylauncher/demonstration/images/p3.png
+usr/share/zylauncher/demonstration/images/bulb_off_64.png
+usr/share/zylauncher/demonstration/images/cpp.png
+usr/share/zylauncher/demonstration/images/clock.png
+usr/share/zylauncher/demonstration/images/qt.png
+usr/share/zylauncher/demonstration/images/trash_64.png
+usr/share/man/
+usr/share/man/man8/
+usr/share/man/man8/udevadm.8
+usr/share/man/man8/vol_id.8
+usr/share/man/man8/udevcontrol.8
+usr/share/man/man8/hotplug.8
+usr/share/man/man8/udevtrigger.8
+usr/share/man/man8/udevsettle.8
+usr/share/man/man8/udevd.8
+usr/share/man/man8/path_id.8
+usr/share/man/man8/udevtest.8
+usr/share/man/man8/udevinfo.8
+usr/share/man/man8/udevmonitor.8
+usr/share/man/man7/
+usr/share/man/man7/udev.7
+usr/include/
+usr/src/
+usr/lib/
+usr/lib/libQtScriptTools.so.4.7
+usr/lib/libQt3Support.so
+usr/lib/libQtSql.so
+usr/lib/libdmallocth.so
+usr/lib/libdl.so
+usr/lib/libQtGui.prl
+usr/lib/libnss_files.so
+usr/lib/librt.so
+usr/lib/libQt3Support.la
+usr/lib/libQtXml.so.4
+usr/lib/libstdc++.so
+usr/lib/libQtMultimedia.so.4.7.3
+usr/lib/libQtSvg.so.4
+usr/lib/libQtXml.prl
+usr/lib/libz.so
+usr/lib/libQtXml.so.4.7.3
+g_file_storage gadget: high speed config #1
+usr/lib/ts/
+usr/lib/ts/liblinear.a
+usr/lib/ts/libcorgi.a
+usr/lib/ts/arctic2.so
+usr/lib/ts/linear_h2200.so
+usr/lib/ts/libdejitter.a
+usr/lib/ts/libh3600.a
+usr/lib/ts/mk712.so
+usr/lib/ts/ucb1x00.la
+usr/lib/ts/libmk712.a
+usr/lib/ts/h3600.la
+usr/lib/ts/dmc.so
+usr/lib/ts/tatung.la
+usr/lib/ts/mk712.la
+usr/lib/ts/linear_h2200.la
+usr/lib/ts/libinput.a
+usr/lib/ts/dejitter.la
+usr/lib/ts/input.so
+usr/lib/ts/linear.la
+usr/lib/ts/liblinear_h2200.a
+usr/lib/ts/input.la
+usr/lib/ts/touchkit.la
+usr/lib/ts/dejitter.so
+usr/lib/ts/libvariance.a
+usr/lib/ts/variance.so
+usr/lib/ts/linear.so
+usr/lib/ts/pthres.so
+usr/lib/ts/libarctic2.a
+usr/lib/ts/libcollie.a
+usr/lib/ts/pthres.la
+usr/lib/ts/corgi.la
+usr/lib/ts/ucb1x00.so
+usr/lib/ts/h3600.so
+usr/lib/ts/libpthres.a
+usr/lib/ts/dmc.la
+usr/lib/ts/arctic2.la
+usr/lib/ts/libucb1x00.a
+usr/lib/ts/touchkit.so
+usr/lib/ts/corgi.so
+usr/lib/ts/collie.la
+usr/lib/ts/collie.so
+usr/lib/ts/tatung.so
+usr/lib/ts/variance.la
+usr/lib/libz.a
+usr/lib/libQtScript.prl
+usr/lib/libQtDeclarative.so
+usr/lib/libqwt.so.5.2
+usr/lib/libQtCore.prl
+usr/lib/libQtSql.la
+usr/lib/libc.so.bak
+usr/lib/libQtDeclarative.so.4.7.3
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libQtGui.so.4.7
+usr/lib/libts-1.0.so.0.0.0
+usr/lib/libQtNetwork.prl
+usr/lib/libnss_nis.so
+usr/lib/libQtSvg.prl
+usr/lib/libQtGui.la
+usr/lib/libQtScript.so.4
+usr/lib/libnss_hesiod.so
+usr/lib/libQtDeclarative.la
+usr/lib/libQt3Support.so.4.7.3
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libbfd-2.21.52.20110702.so
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libts-0.0.so.0.1.1
+usr/lib/libts-0.0.so.0
+usr/lib/libts.la
+usr/lib/libQtXml.so
+usr/lib/libQtSql.so.4.7
+usr/lib/libQtMultimedia.so
+usr/lib/libQtMultimedia.prl
+usr/lib/libQtSvg.so.4.7
+usr/lib/libQtScript.la
+usr/lib/libutil.so
+usr/lib/libnss_dns.so
+usr/lib/libdmalloc.so
+usr/lib/libQtMultimedia.la
+usr/lib/libQtSql.so.4.7.3
+g_file_storage gadget: high speed config #1
+usr/lib/libQtCore.so.4.7.3
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libQtGui.so
+usr/lib/libQtSvg.so
+usr/lib/libbfd.so
+usr/lib/libQt3Support.so.4
+usr/lib/libcrypto.so.1.0.0
+g_file_storage gadget: high speed config #1
+usr/lib/libQtMultimedia.so.4.7
+usr/lib/libQtTest.so
+usr/lib/libQtScript.so.4.7.3
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libQtSvg.la
+usr/lib/libm.so
+usr/lib/libQtTest.so.4
+usr/lib/libQtXml.la
+usr/lib/libQtGui.so.4.7.3
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libanl.so
+usr/lib/libdmallocxx.so
+g_file_storage gadget: high speed config #1
+usr/lib/libQtDeclarative.so.4.7
+usr/lib/libnss_compat.so
+usr/lib/libQtNetwork.so.4
+usr/lib/libts-1.0.so.0
+usr/lib/libnsl.so
+usr/lib/libz.so.1.2.8
+usr/lib/libpthread.so
+usr/lib/libcrypt.so
+usr/lib/libvolume_id.so
+usr/lib/fonts/
+usr/lib/fonts/helvetica_100_75i.qpf
+usr/lib/fonts/README
+usr/lib/fonts/helvetica_140_75i.qpf
+usr/lib/fonts/helvetica_100_50i.qpf
+usr/lib/fonts/helvetica_140_50i.qpf
+usr/lib/fonts/l048033t.pfa
+usr/lib/fonts/UTI_____.pfa
+usr/lib/fonts/DejaVuSans.ttf
+g_file_storage gadget: high speed config #1
+usr/lib/fonts/VeraMono.ttf
+usr/lib/fonts/helvetica_240_75.qpf
+usr/lib/fonts/VeraMoBd.ttf
+usr/lib/fonts/c0649bt_.pfb
+usr/lib/fonts/l047033t.pfa
+usr/lib/fonts/fixed_70_50.qpf
+usr/lib/fonts/DejaVuSansMono-Bold.ttf
+usr/lib/fonts/VeraIt.ttf
+usr/lib/fonts/helvetica_80_75.qpf
+usr/lib/fonts/c0419bt_.pfb
+usr/lib/fonts/courbi.pfa
+usr/lib/fonts/helvetica_180_50i.qpf
+usr/lib/fonts/helvetica_240_75i.qpf
+usr/lib/fonts/unifont_160_50.qpf
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/fonts/helvetica_100_75.qpf
+usr/lib/fonts/c0648bt_.pfb
+usr/lib/fonts/helvetica_180_50.qpf
+usr/lib/fonts/helvetica_240_50.qpf
+usr/lib/fonts/helvetica_180_75i.qpf
+usr/lib/fonts/cour.pfa
+usr/lib/fonts/l049036t.pfa
+usr/lib/fonts/helvetica_80_50.qpf
+usr/lib/fonts/VeraSe.ttf
+usr/lib/fonts/DejaVuSerif.ttf
+usr/lib/fonts/DejaVuSansMono-BoldOblique.ttf
+usr/lib/fonts/l048013t.pfa
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/fonts/VeraMoBI.ttf
+usr/lib/fonts/helvetica_120_75i.qpf
+usr/lib/fonts/helvetica_140_50.qpf
+usr/lib/fonts/DejaVuSans-Bold.ttf
+usr/lib/fonts/helvetica_240_50i.qpf
+usr/lib/fonts/VeraBd.ttf
+usr/lib/fonts/c0583bt_.pfb
+usr/lib/fonts/VeraSeBd.ttf
+usr/lib/fonts/helvetica_140_75.qpf
+usr/lib/fonts/DejaVuSansMono.ttf
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/fonts/l049013t.pfa
+usr/lib/fonts/DejaVuSerif-Bold.ttf
+usr/lib/fonts/helvetica_80_50i.qpf
+usr/lib/fonts/DejaVuSans-BoldOblique.ttf
+usr/lib/fonts/c0632bt_.pfb
+usr/lib/fonts/l048036t.pfa
+g_file_storage gadget: high speed config #1
+usr/lib/fonts/cursor.pfa
+usr/lib/fonts/DejaVuSans-Oblique.ttf
+usr/lib/fonts/Vera.ttf
+usr/lib/fonts/UTBI____.pfa
+usr/lib/fonts/helvetica_80_75i.qpf
+usr/lib/fonts/UTRG____.pfa
+usr/lib/fonts/courb.pfa
+usr/lib/fonts/couri.pfa
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/fonts/c0633bt_.pfb
+usr/lib/fonts/helvetica_120_50i.qpf
+usr/lib/fonts/l047016t.pfa
+usr/lib/fonts/l047013t.pfa
+usr/lib/fonts/micro_40_50.qpf
+usr/lib/fonts/DejaVuSerif-Oblique.ttf
+usr/lib/fonts/l049033t.pfa
+usr/lib/fonts/l047036t.pfa
+usr/lib/fonts/helvetica_100_50.qpf
+usr/lib/fonts/japanese_230_50.qpf
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/fonts/fixed_120_50.qpf
+usr/lib/fonts/helvetica_120_75.qpf
+usr/lib/fonts/l049016t.pfa
+usr/lib/fonts/helvetica_180_75.qpf
+usr/lib/fonts/l048016t.pfa
+usr/lib/fonts/DejaVuSansMono-Oblique.ttf
+usr/lib/fonts/VeraMoIt.ttf
+usr/lib/fonts/helvetica_120_50.qpf
+usr/lib/fonts/c0611bt_.pfb
+usr/lib/fonts/VeraBI.ttf
+usr/lib/fonts/UTB_____.pfa
+usr/lib/fonts/DejaVuSerif-BoldOblique.ttf
+usr/lib/fonts/c0582bt_.pfb
+usr/lib/libQtTest.la
+usr/lib/libQtGui.so.4
+usr/lib/libQtMultimedia.so.4
+usr/lib/libiw.so.29
+usr/lib/libssl.so.1.0.0
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libQtCore.la
+usr/lib/libQtNetwork.so.4.7.3
+g_file_storage gadget: high speed config #1
+usr/lib/libduma.so
+usr/lib/libQtNetwork.so
+usr/lib/libQtNetwork.la
+usr/lib/libdmallocthcxx.so
+usr/lib/libQtCore.so.4
+usr/lib/libqwt.so
+usr/lib/libQtSql.so.4
+usr/lib/libQtCore.so.4.7
+usr/lib/pkgconfig/
+usr/lib/pkgconfig/QtXml.pc
+usr/lib/pkgconfig/QtDeclarative.pc
+usr/lib/pkgconfig/QtGui.pc
+usr/lib/pkgconfig/QtSql.pc
+usr/lib/pkgconfig/Qt3Support.pc
+usr/lib/pkgconfig/QtCore.pc
+usr/lib/pkgconfig/QtNetwork.pc
+usr/lib/pkgconfig/QtTest.pc
+usr/lib/pkgconfig/QtSvg.pc
+usr/lib/pkgconfig/QtScriptTools.pc
+usr/lib/pkgconfig/QtScript.pc
+usr/lib/pkgconfig/QtMultimedia.pc
+usr/lib/qt/
+usr/lib/qt/plugins/
+usr/lib/qt/plugins/mousedrivers/
+usr/lib/qt/plugins/mousedrivers/libqlinuxtpmousedriver.so
+usr/lib/qt/plugins/mousedrivers/libqpcmousedriver.so
+usr/lib/qt/plugins/imageformats/
+usr/lib/qt/plugins/imageformats/libqico.so
+usr/lib/qt/plugins/imageformats/libqmng.so
+g_file_storage gadget: high speed config #1
+usr/lib/qt/plugins/imageformats/libqsvg.so
+usr/lib/qt/plugins/imageformats/libqgif.so
+usr/lib/qt/plugins/imageformats/libqjpeg.so
+usr/lib/qt/plugins/imageformats/libqtiff.so
+g_file_storage gadget: high speed config #1
+usr/lib/qt/plugins/bearer/
+usr/lib/qt/plugins/bearer/libqgenericbearer.so
+usr/lib/qt/plugins/iconengines/
+usr/lib/qt/plugins/iconengines/libqsvgicon.so
+usr/lib/qt/plugins/qmltooling/
+usr/lib/qt/plugins/qmltooling/libtcpserver.so
+usr/lib/qt/plugins/sqldrivers/
+usr/lib/qt/plugins/sqldrivers/libqsqlite.so
+usr/lib/libQtSql.prl
+usr/lib/libQtScriptTools.prl
+usr/lib/libts.a
+usr/lib/libqwt.so.5.2.0
+g_file_storage gadget: high speed config #1
+usr/lib/libQtScript.so.4.7
+usr/lib/libts.so
+usr/lib/libQtScript.so
+usr/lib/libQt3Support.so.4.7
+usr/lib/libduma.so.0.0.0
+usr/lib/libQtSvg.so.4.7.3
+g_file_storage gadget: high speed config #1
+g_file_storage gadget: high speed config #1
+usr/lib/libQtNetwork.so.4.7
+usr/lib/libQtScriptTools.so.4.7.3
+usr/lib/libQtXml.so.4.7
+usr/lib/libresolv.so
+usr/lib/libQtDeclarative.prl
+usr/lib/libQt3Support.prl
+usr/lib/libQtDeclarative.so.4
+usr/lib/libQtScriptTools.so
+usr/lib/libQtCore.so
+usr/lib/libQtTest.so.4.7
+usr/lib/libthread_db.so
+usr/lib/libqwt.so.5
+usr/lib/libQtTest.so.4.7.3
+usr/lib/libQtTest.prl
+usr/lib/libnss_nisplus.so
+usr/lib/libBrokenLocale.so
+usr/lib/libpthread.so.bak
+usr/lib/libc.so
+usr/lib/libz.so.1
+usr/lib/libQtScriptTools.so.4
+usr/lib/libQtScriptTools.la
+usr/bin/
+usr/bin/udevtest
+usr/bin/udevinfo
+usr/bin/startx
+usr/bin/kobs-ng
+usr/test/
+usr/test/up_test_function
+usr/test/283A_test/
+usr/test/283A_test/g_file_storage.ko
+usr/test/283A_test/usb_storage_up
+usr/test/283A_test/usb_test_sdb
+usr/test/283A_test/mmc_test
+usr/test/283A_test/lradc.ko
+usr/test/283A_test/start_test
+usr/test/283A_test/usb_test_sda
+usr/test/283A_test/mxs-hsadc.ko
+usr/test/283A_test/device_test
+UTP: received command 'frf'
+UTP: waiting for pipe to close
+usr/test/283A_test/usb_otg_test
+usr/test/283A_test/gpio_driver_283.ko
+usr/test/283A_test/gpio_driver.ko
+usr/test/287B_test/
+usr/test/287B_test/.start_zylauncher.swp
+usr/test/287B_test/g_file_storage.ko
+usr/test/287B_test/gpio_driver_287.ko
+usr/test/287B_test/usb_storage_up
+usr/test/287B_test/usb_test_sdb
+usr/test/287B_test/mmc_test
+usr/test/287B_test/beep.ko
+usr/test/287B_test/lradc.ko
+usr/test/287B_test/start_test
+usr/test/287B_test/usb_test_sda
+usr/test/287B_test/mxs-hsadc.ko
+usr/test/287B_test/device_test
+usr/test/287B_test/usb_otg_test
+usr/test/287B_test/up_modules
+usr/test/287B_test/gpio_driver.ko
+usr/test/280test/
+usr/test/280test/usb_test_sdb
+usr/test/280test/mmc_test
+usr/test/280test/lradc.ko
+usr/test/280test/start_test
+usr/test/280test/usb_test_sda
+usr/test/280test/mxs-hsadc.ko
+usr/test/280test/device_test
+usr/test/280test/usb_otg_test
+usr/test/280test/gpio_driver.ko
+usr/test/platform
+usr/local/
+usr/sbin/
+usr/sbin/fb_set
+usr/sbin/udevmonitor
+usr/sbin/input_type
+var/
+var/ftp/
+var/ftp/lib/
+var/ftp/etc/
+var/ftp/bin/
+var/ftp/pub/
+var/lock/
+var/lib/
+var/lib/rpm/
+var/spool/
+var/spool/lpd/
+var/spool/mail/
+var/log/
+var/log/hotplug/
+var/log/wtmp
+var/log/lastlog
+var/www/
+var/www/html/
+var/www/html/index.html
+var/www/cgi-bin/
+var/www/cgi-bin/test_cgi
+var/www/icons/
+var/dev.tar
+var/tmp/
+var/run/
+var/run/usb/
+var/run/utmp
+var/mail/
+UTP: files were flushed.
+UTP: sending Success
+g_file_storage gadget: high speed config #1
+UTP: received command '$ umount /mnt/ubi0'
+UTP: sending Busy
+UTP: executing "umount /mnt/ubi0"
+UBIFS: un-mount UBI device 0, volume 0
+UTP: sending Success
+UTP: received command '$ echo Update Complete!'
+UTP: sending Busy
+UTP: executing "echo Update Complete!"
+Update Complete!
+UTP: sending Success
+g_file_storage gadget: high speed config #1
+Apr 29 201516:02:49
+FRAC 0x92925552
+Wait for ddr ready 1bank count is 8
+power 0x00820616
+Frac 0x92925552
+start change cpu freq
+hbus 0x00000003
+cpu 0x00010001
+start test memory accress
+ddr2 0x40FFFF00
+finish simple test
+******ddr2 read write success!
+finish simple test
+finish boot prep,start to run ...
